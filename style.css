@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #ededed;
 }
 
 /* cover */
@@ -252,11 +253,16 @@ body {
 
 .cardsDiv {
     padding: 20px;
+    padding-top: 0;
 }
 
 .cardsDiv .row {
     margin-right: 0;
     justify-content: space-around;
+}
+
+.cardsDiv .row .col-12 {
+    margin-top: -5vh;
 }
 
 .card {
@@ -285,3 +291,44 @@ body {
         padding-left: 15px;
     }
 }
+
+@media (max-width:767px) {
+    .cardsDiv .row .margintop5 {
+        margin-top: 5vh;
+    }
+}
+/* end cards */
+
+/* capabilities */
+.capabilities {
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.capabilitiesVideo video {
+    width: 100%;
+}
+
+.capabilitiesContent {
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.capabilitiesCol2 {
+    display: flex;
+    align-items: center;
+}
+
+.capabilitiesHeading h2 {
+    font-size: 46px;
+}
+
+@media (max-width: 767px) {
+    .capabilitiesContent {
+        margin-left: 0;
+    }
+}
+
+
+/* end capabilitis */
